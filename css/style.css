@@ -1,0 +1,211 @@
+body {
+    font-family: 'Lato';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+
+a {
+    color: #53B9E8;
+}
+
+a:focus, a:hover, a:active {
+    color: #0878BE;
+    text-decoration: none;
+}
+
+.bg-primary {
+    background-color: #28405D !important;
+}
+
+.bg-secondary {
+    background-color: #091B30 !important;
+}
+
+.text-primary {
+    color: #53B9E8 !important;
+}
+
+.text-secondary {
+    color: #211D50 !important;
+}
+
+.btn-primary {
+    background-color: #53B9E8;
+    border-color: #53B9E8;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #0878BE;
+    border-color: #0878BE;
+}
+
+.btn-secondary {
+    background-color: #00599B;
+    border-color: #00599B;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    background-color: #243871;
+    border-color: #243871;
+}
+
+hr.light,
+hr.dark {
+    max-width: 12rem;
+    padding: 0;
+    border: none;
+    border-top: solid 0.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+hr.light {
+    border-color: #fff;
+}
+
+hr.dark {
+    border-color: #091B30;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+    font-size: 2.25rem;
+    line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+    section h2 {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+}
+
+#navigation {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+
+#navigation .navbar-brand {
+    color: #fff;
+}
+
+#navigation .navbar-nav {
+    margin-top: 1rem;
+    letter-spacing: 0.0625rem;
+}
+
+#navigation .navbar-nav li.nav-item a.nav-link {
+    color: #fff;
+}
+
+#navigation .navbar-nav li.nav-item a.nav-link:hover {
+    color: #53B9E8;
+}
+
+#navigation .navbar-nav li.nav-item a.nav-link:active, #navigation .navbar-nav li.nav-item a.nav-link:focus {
+    color: #fff;
+}
+
+#navigation .navbar-nav li.nav-item a.nav-link.active {
+    color: #53B9E8;
+}
+
+#navigation .navbar-toggler {
+    font-size: 80%;
+    padding: 0.8rem;
+}
+
+@media (min-width: 992px) {
+    #navigation .navbar-brand {
+        font-size: 2em;
+    }
+
+    #navigation .navbar-nav {
+        margin-top: 0;
+    }
+
+    #navigation .navbar-nav > li.nav-item > a.nav-link.active {
+        color: #fff;
+        background: #53B9E8;
+    }
+}
+
+header.introduction {
+    padding-top: calc(6rem + 72px);
+    padding-bottom: 6rem;
+}
+
+header.introduction h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+header.introduction h2 {
+    font-size: 1rem;
+    font-family: 'Lato';
+}
+
+@media (min-width: 992px) {
+    header.introduction h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    header.introduction h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.services {
+    margin-bottom: -15px;
+}
+
+.services .service-item {
+    max-width: 400px;
+}
+
+.footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #091B30;
+    color: #fff;
+}
+
+ul.social-links {
+    margin-bottom: 0;
+}
+
+ul.social-links li a {
+    color: white;
+}
+
+ul.social-links li a:hover, ul.social-links li a:focus, ul.social-links li a:active {
+    color: #53B9E8;
+}
+
+.scroll-to-top {
+    z-index: 1042;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+}
+
+.scroll-to-top a {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgba(8, 120, 190, 0.8);
+    line-height: 3.1rem;
+}
