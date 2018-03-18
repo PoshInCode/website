@@ -1,5 +1,5 @@
-<p style="text-align: center;">
-    <img src="https://www.poshin-code.com/img/poshin-code-1-light-bg.png" alt="PoshIn Code" width="400">
+<p align="center">
+    <img src="https://www.poshin-code.com/img/poshin-code-1-light-bg.png" alt="PoshIn Code" width="800">
 </p>
 
 ---
