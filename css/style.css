@@ -1,7 +1,9 @@
+/*noinspection CssNoGenericFontName*/
 body {
     font-family: 'Lato';
 }
 
+/*noinspection CssNoGenericFontName*/
 h1,
 h2,
 h3,
@@ -91,6 +93,7 @@ section h2 {
     }
 }
 
+/*noinspection CssNoGenericFontName*/
 #navigation {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -146,6 +149,12 @@ section h2 {
 header.introduction {
     padding-top: calc(6rem + 72px);
     padding-bottom: 6rem;
+    background-image: url("../img/header.jpg");
+    background-position: top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 header.introduction h1 {
@@ -153,18 +162,26 @@ header.introduction h1 {
     line-height: 2rem;
 }
 
-header.introduction h2 {
-    font-size: 1rem;
+/*noinspection CssNoGenericFontName*/
+header.introduction p {
+    font-size: 1.2rem;
     font-family: 'Lato';
+    font-weight: bold;
 }
 
 @media (min-width: 992px) {
-    header.introduction h1 {
-        font-size: 3.5rem;
-        line-height: 3.5rem;
+    header.introduction {
+        min-height: 600px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
-    header.introduction h2 {
+    header.introduction h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    header.introduction p {
         font-size: 1.5rem;
     }
 }
