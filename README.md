@@ -4,6 +4,9 @@
 
 ---
 
-# Website
-
 Source code behind [poshin-code.com](https://www.poshin-code.com/)
+
+## Installation
+
+1. Run `npm install` to install dependencies
+1. Run `gulp` to build assets

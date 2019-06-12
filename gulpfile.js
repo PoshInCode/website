@@ -1,7 +1,7 @@
-var gulp = require('gulp');
-var cleanCSS = require('gulp-clean-css');
-var rename = require("gulp-rename");
-var uglify = require('gulp-uglify');
+let gulp = require('gulp');
+let cleanCSS = require('gulp-clean-css');
+let rename = require("gulp-rename");
+let uglify = require('gulp-uglify');
 
 // Copy 3rd-party libraries from /node_modules into /vendor
 gulp.task('vendor', function() {
@@ -33,7 +33,7 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('./vendor/jquery-easing'))
 });
 
-gulp.task('css:minify', [], function() {
+gulp.task('css:minify', function() {
   return gulp.src([
       './css/*.css',
       '!./css/*.min.css'
@@ -45,7 +45,7 @@ gulp.task('css:minify', [], function() {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('css', ['css:minify']);
+gulp.task('css', gulp.parallel('css:minify'));
 
 gulp.task('js:minify', function() {
   return gulp.src([
@@ -59,6 +59,6 @@ gulp.task('js:minify', function() {
     .pipe(gulp.dest('./js'));
 });
 
-gulp.task('js', ['js:minify']);
+gulp.task('js', gulp.parallel('js:minify'));
 
-gulp.task('default', ['css', 'js', 'vendor']);
+gulp.task('default', gulp.parallel('css', 'js', 'vendor'));
